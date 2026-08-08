@@ -1,0 +1,193 @@
+/* =========================
+   Gallery - Mobile first
+   ========================= */
+
+.gallery {
+  padding: 64px 0;
+}
+
+.gallery .container {
+  width: 100%;
+  max-width: 375px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.gallery-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.gallery-title {
+  margin: 0;
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.gallery-text {
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.gallery-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery-item {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.gallery-item picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================
+   Tablet
+   ========================= */
+
+@media only screen and (min-width: 768px) {
+  .gallery .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .gallery-title-wrapper {
+    margin-bottom: 80px;
+  }
+
+  .gallery-text {
+    font-size: 18px;
+  }
+
+  .gallery-list {
+    position: relative;
+    display: block;
+    width: 704px;
+    height: 626px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gallery-item {
+    position: absolute;
+    width: 340px;
+    margin: 0;
+  }
+
+  .gallery-item-purple {
+    top: 0;
+    left: 0;
+    height: 368px;
+  }
+
+  .gallery-item-pendant {
+    top: 400px;
+    left: 0;
+    height: 226px;
+  }
+
+  .gallery-item-bracelet {
+    top: 0;
+    right: 0;
+    height: 216px;
+  }
+
+  .gallery-item-flower {
+    top: 240px;
+    right: 0;
+    height: 386px;
+  }
+}
+
+/* =========================
+   Desktop
+   ========================= */
+
+@media only screen and (min-width: 1440px) {
+  .gallery .container {
+    max-width: 1440px;
+    padding: 0 64px;
+  }
+
+  .gallery-title-wrapper {
+    margin-bottom: 80px;
+  }
+
+  .gallery-title {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  .gallery-list {
+    position: static;
+    display: grid;
+    grid-template-columns: 640px 640px;
+    grid-template-rows: 426px 182px 426px;
+    column-gap: 32px;
+    row-gap: 32px;
+
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gallery-item {
+    position: static;
+    width: 640px;
+    margin: 0;
+  }
+
+  .gallery-item-purple {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    height: 640px;
+  }
+
+  .gallery-item-pendant {
+    grid-column: 1;
+    grid-row: 3;
+    height: 426px;
+  }
+
+  .gallery-item-bracelet {
+    grid-column: 2;
+    grid-row: 1;
+    height: 426px;
+  }
+
+  .gallery-item-flower {
+    grid-column: 2;
+    grid-row: 2 / 4;
+    height: 640px;
+  }
+}

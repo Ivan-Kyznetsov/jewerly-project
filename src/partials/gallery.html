@@ -1,1 +1,92 @@
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="gallery-title-wrapper">
+      <h2 class="gallery-title">Jewelry Showcase</h2>
+      <p class="gallery-text">
+        Discover the beauty of our handcrafted jewelry in style.
+      </p>
+    </div>
 
+    <ul class="gallery-list">
+      <li class="gallery-item gallery-item-purple">
+        <picture>
+          <source
+            srcset="./img/gallery-purple.jpg 1x, ./img/gallery-purple@2x.jpg 2x"
+          />
+          <img
+            class="gallery-image"
+            src="./img/gallery-purple.jpg"
+            alt="Purple gemstone bracelet"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+
+      <li class="gallery-item gallery-item-pendant">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/gallery-pendant.jpg    1x,
+              ./img/gallery-pendant@2x.jpg 2x
+            "
+          />
+
+          <source
+            srcset="
+              ./img/gallery-pendant-mobile.jpg    1x,
+              ./img/gallery-pendant-mobile@2x.jpg 2x
+            "
+          />
+
+          <img
+            class="gallery-image"
+            src="./img/gallery-pendant-mobile.jpg"
+            alt="Orange handmade pendant"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+
+      <li class="gallery-item gallery-item-bracelet">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/gallery-bracelet.jpg    1x,
+              ./img/gallery-bracelet@2x.jpg 2x
+            "
+          />
+
+          <source
+            srcset="
+              ./img/gallery-bracelet-mobile.jpg    1x,
+              ./img/gallery-bracelet-mobile@2x.jpg 2x
+            "
+          />
+
+          <img
+            class="gallery-image"
+            src="./img/gallery-bracelet-mobile.jpg"
+            alt="Handmade beaded bracelet"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+
+      <li class="gallery-item gallery-item-flower">
+        <picture>
+          <source
+            srcset="./img/gallery-flower.jpg 1x, ./img/gallery-flower@2x.jpg 2x"
+          />
+          <img
+            class="gallery-image"
+            src="./img/gallery-flower.jpg"
+            alt="Handcrafted floral jewelry"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+    </ul>
+  </div>
+</section>
