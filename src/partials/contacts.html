@@ -1,0 +1,101 @@
+<section class="contacts" id="contacts">
+  <div class="container">
+    <p class="contacts-subtitle">Connect</p>
+
+    <h2 class="contacts-title">Order your unique jewelry</h2>
+
+    <p class="contacts-description">We'd love to hear more details from you!</p>
+
+    <div class="contacts-content">
+      <ul class="contacts-list">
+        <li class="contacts-item">
+          <svg class="contacts-icon" width="24" height="24" aria-hidden="true">
+            <use href="./img/icons.svg#envelope"></use>
+          </svg>
+
+          <h3 class="contacts-item-title">Email</h3>
+
+          <a class="contacts-link" href="mailto:info@handmadejewelry.com">
+            info@handmadejewelry.com
+          </a>
+        </li>
+
+        <li class="contacts-item">
+          <svg class="contacts-icon" width="24" height="24" aria-hidden="true">
+            <use href="./img/icons.svg#phone"></use>
+          </svg>
+
+          <h3 class="contacts-item-title">Phone</h3>
+
+          <a class="contacts-link" href="tel:+15550000000">
+            +1 (555) 000-0000
+          </a>
+        </li>
+
+        <li class="contacts-item">
+          <svg class="contacts-icon" width="24" height="24" aria-hidden="true">
+            <use href="./img/icons.svg#map"></use>
+          </svg>
+
+          <h3 class="contacts-item-title">Office</h3>
+
+          <a
+            class="contacts-link"
+            href="https://www.google.com/maps/search/?api=1&query=76-8+Oakington+Manor+Dr%2C+London%2C+UK"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            76-8 Oakington Manor Dr, London, UK
+          </a>
+        </li>
+      </ul>
+
+      <form class="contacts-form">
+        <div class="contacts-field">
+          <label class="contacts-label" for="contact-name">Name*</label>
+          <input
+            class="contacts-input"
+            id="contact-name"
+            name="name"
+            type="text"
+            placeholder="Tony"
+            pattern="^[a-zA-Z\s\.]{5,28}$"
+            minlength="5"
+            maxlength="28"
+            autocomplete="name"
+            required
+          />
+        </div>
+
+        <div class="contacts-field">
+          <label class="contacts-label" for="contact-phone">Phone*</label>
+          <input
+            class="contacts-input"
+            id="contact-phone"
+            name="phone"
+            type="tel"
+            placeholder="+1 234 567 8900"
+            pattern="^\+[0-9\s]{14}$"
+            autocomplete="tel"
+            required
+          />
+        </div>
+
+        <div class="contacts-field">
+          <label class="contacts-label" for="contact-message">
+            Describe what you want
+          </label>
+          <textarea
+            class="contacts-textarea"
+            id="contact-message"
+            name="message"
+            placeholder="Type your message..."
+            maxlength="500"
+          ></textarea>
+        </div>
+
+        <button class="contacts-button" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
