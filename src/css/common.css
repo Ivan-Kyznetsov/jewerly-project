@@ -41,3 +41,58 @@ body {
 .section {
   padding: 64px 0;
 }
+
+.section-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.section-text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 6px 12px;
+  border: 1px solid #ccc16e;
+  background-color: #ccc16e;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: transparent;
+  outline: none;
+}
+
+.button:active {
+  background-color: #ccc16e;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.32);
+}
+
+.button:disabled,
+.button[aria-disabled='true'] {
+  opacity: 0.3;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+@media only screen and (min-width: 1440px) {
+  .section-title {
+    font-size: 48px;
+  }
+}
