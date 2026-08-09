@@ -37,3 +37,7 @@ body {
   font-family: 'Mulish', sans-serif;
   color: #000;
 }
+
+.section {
+  padding: 64px 0;
+}
