@@ -1,6 +1,4 @@
 .contacts {
-  padding-top: 64px;
-  padding-bottom: 64px;
   background-color: #ffffff;
 }
 
@@ -13,11 +11,7 @@
 
 .contacts-title {
   margin-bottom: 16px;
-  font-family: 'Sora', sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+  text-align: left;
 }
 
 .contacts-description {
@@ -154,45 +148,9 @@
 
 .contacts-button {
   width: 100%;
-  height: 36px;
-  padding: 6px 12px;
-  border: 1px solid #ccc16e;
-  background-color: #ccc16e;
-  font-family: 'Mulish', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000000;
-  cursor: pointer;
-}
-
-.contacts-button:hover,
-.contacts-button:focus {
-  border-color: #ccc16e;
-  background-color: transparent;
-  outline: none;
-}
-
-.contacts-button:active {
-  border-color: #ccc16e;
-  background-color: #ccc16e;
-  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.32);
-}
-
-.contacts-button:disabled {
-  border-color: #ccc16e;
-  background-color: #ccc16e;
-  box-shadow: none;
-  opacity: 0.3;
-  cursor: not-allowed;
 }
 
 @media only screen and (min-width: 768px) {
-  .contacts .container {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
   .contacts-list {
     flex-direction: row;
     gap: 25px;
@@ -209,15 +167,6 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .contacts .container {
-    padding-left: 64px;
-    padding-right: 64px;
-  }
-
-  .contacts-title {
-    font-size: 48px;
-  }
-
   .contacts-content {
     flex-direction: row;
     gap: 32px;
