@@ -71,6 +71,7 @@ body {
   line-height: 1.5;
   color: #000000;
   cursor: pointer;
+  transition: background-color 0.25s linear;
 }
 
 .button:hover,
