@@ -1,4 +1,4 @@
-/* =========================
+ /* =========================
    About Us - Mobile first
 ========================= */
 
@@ -16,12 +16,13 @@
 .about-us-content {
   display: flex;
   flex-direction: column;
-}
 
+  justify-content: center;
+  align-items: center;
+}
 /* =========================
    IMAGE
 ========================= */
-
 .about-us-image {
   display: block;
   width: 100%;
@@ -36,6 +37,7 @@
 .about-us-info {
   display: flex;
   flex-direction: column;
+  text-align: left;
   width: 100%;
   margin-top: 24px;
 }
@@ -71,7 +73,33 @@
   font-size: 18px;
   line-height: 1.5;
 }
+/* =========================
+   About Us - ICONS BEFORE
+========================= */
+.about-us-list-item::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-right: 1.5px;
 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.about-us-list-item:nth-child(1)::before {
+  background-image: url('../img/about-us-icon-leaf.svg');
+}
+
+.about-us-list-item:nth-child(2)::before {
+  background-image: url('../img/about-us-icon-donate-heart.svg');
+}
+
+.about-us-list-item:nth-child(3)::before {
+  background-image: url('../img/about-us-icon-book.svg');
+}
 /* =========================
    About Us - Tablet
 ========================= */
@@ -119,5 +147,9 @@
   .about-us-info {
     width: 640px;
     margin-top: 0;
+  }
+
+  .about-us-list-item::before {
+    margin-right: 3px;
   }
 }
