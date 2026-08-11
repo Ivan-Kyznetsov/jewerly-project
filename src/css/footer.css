@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -26,6 +25,11 @@
 
 .footer-logo {
   display: inline-flex;
+}
+
+.footer-logo img {
+  width: 84px;
+  height: 36px;
 }
 
 .footer-socials {
@@ -132,5 +136,10 @@
   .footer-column,
   .footer-nav {
     width: 100%;
+  }
+
+  .footer-logo img {
+    width: 217px;
+    height: 93px;
   }
 }
