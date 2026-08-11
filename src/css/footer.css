@@ -1,9 +1,14 @@
 .footer {
+  background-color: #FFFFFF;
+  padding: 80px 64px 64px;
+}
+
+.footer-container {
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
-  padding: 80px 64px;
-  gap: 24px;
+  gap: 64px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .footer-content {
@@ -12,7 +17,7 @@
   width: 100%;
 }
 
-.footer-left {
+.footer-column {
   display: flex;
   flex-direction: column;
   width: 342px;
@@ -20,7 +25,7 @@
 }
 
 .footer-logo {
-  display: inline-block;
+  display: inline-flex;
 }
 
 .footer-socials {
@@ -33,7 +38,7 @@
   align-items: center;
   justify-content: center;
   color: #111111;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.25s linear;
 }
 
 .footer-socials a:hover,
@@ -42,7 +47,7 @@
 }
 
 .footer-nav {
-  width: 303px;
+  width: 304px;
 }
 
 .footer-nav-list {
@@ -55,23 +60,77 @@
   color: #111111;
   font-size: 16px;
   line-height: 1.5;
-  transition: color 0.3s ease;
+  transition: color 0.25s linear;
 }
 
 .footer-nav-list a:hover,
 .footer-nav-list a:focus {
-  color: #666666;
+  color: #ccc16e;
 }
 
 .footer-credits {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border-top: 1px solid rgba(0, 0, 0, 0.2); 
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
   padding-top: 32px;
 }
 
 .footer-credits p {
   color: #333333;
   font-size: 14px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer {
+    padding: 64px 32px;
+  }
+
+  .footer-container {
+    gap: 64px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .footer-column {
+    align-items: center;
+  }
+
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-nav-list {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-credits {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 64px 16px;
+  }
+
+  .footer-container {
+    gap: 64px;
+  }
+
+  .footer-content {
+    gap: 64px;
+  }
+
+  .footer-column,
+  .footer-nav {
+    width: 100%;
+  }
 }
