@@ -86,7 +86,11 @@ body {
 }
 
 .button:disabled,
-.button[aria-disabled='true'] {
+.button[aria-disabled='true'],
+.nav-link:disabled,
+.nav-link[aria-disabled='true'],
+.mobile-menu-link:disabled,
+.mobile-menu-link[aria-disabled='true'] {
   opacity: 0.3;
   box-shadow: none;
   cursor: not-allowed;
