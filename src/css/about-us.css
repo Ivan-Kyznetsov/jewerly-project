@@ -1,0 +1,156 @@
+ /* =========================
+   About Us - Mobile first
+========================= */
+
+.about-us {
+  padding: 56px 0;
+}
+
+.about-us .container {
+  width: 100%;
+  max-width: 375px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+/* =========================
+   IMAGE
+========================= */
+.about-us-image {
+  display: block;
+  width: 100%;
+  height: 335px;
+  object-fit: cover;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.about-us-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.about-us-title {
+  width: 100%;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.about-us-text {
+  margin-bottom: 24px;
+
+  font-weight: 400;
+  font-size: 18px;
+  text-align: left;
+}
+
+.about-us-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-us-list-item {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.about-us-list-item-text {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+}
+/* =========================
+   About Us - ICONS BEFORE
+========================= */
+.about-us-list-item::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-right: 1.5px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.about-us-list-item:nth-child(1)::before {
+  background-image: url('../img/about-us-icon-leaf.svg');
+}
+
+.about-us-list-item:nth-child(2)::before {
+  background-image: url('../img/about-us-icon-donate-heart.svg');
+}
+
+.about-us-list-item:nth-child(3)::before {
+  background-image: url('../img/about-us-icon-book.svg');
+}
+/* =========================
+   About Us - Tablet
+========================= */
+
+@media only screen and (min-width: 768px) {
+  .about-us .container {
+    max-width: 768px;
+    padding: 112px 32px;
+  }
+
+  .about-us-image {
+    width: 100%;
+    height: 456px;
+  }
+
+  .about-us-info {
+    width: 100%;
+  }
+
+  .about-us-list {
+    gap: 24px;
+  }
+}
+
+/* =========================
+   About Us - Desktop
+========================= */
+
+@media only screen and (min-width: 1440px) {
+  .about-us .container {
+    max-width: 1440px;
+    padding: 112px 64px;
+  }
+
+  .about-us-content {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .about-us-image {
+    width: 640px;
+    height: 456px;
+  }
+
+  .about-us-info {
+    width: 640px;
+    margin-top: 0;
+  }
+
+  .about-us-list-item::before {
+    margin-right: 3px;
+  }
+}
