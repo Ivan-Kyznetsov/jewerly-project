@@ -118,6 +118,10 @@
     align-items: center;
     text-align: center;
   }
+  .footer-logo img {
+      width: 342px;
+      height: 146px;
+  }
 }
 
 @media screen and (max-width: 767px) {
