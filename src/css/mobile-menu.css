@@ -27,7 +27,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 72px 16px 40px 16px;
 }
 
 .mobile-menu-header {
@@ -35,7 +34,6 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 32px;
 }
 
 .mobile-logo {
