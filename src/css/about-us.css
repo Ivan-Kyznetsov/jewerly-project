@@ -37,7 +37,6 @@
 .about-us-info {
   display: flex;
   flex-direction: column;
-  text-align: left;
   width: 100%;
   margin-top: 24px;
 }
@@ -45,6 +44,7 @@
 .about-us-title {
   width: 100%;
   margin-bottom: 24px;
+  text-align: left;
 }
 
 .about-us-text {
@@ -52,6 +52,7 @@
 
   font-weight: 400;
   font-size: 18px;
+  text-align: left;
 }
 
 .about-us-list {
