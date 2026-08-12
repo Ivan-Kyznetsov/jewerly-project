@@ -1,13 +1,13 @@
 <header id="header" class="page-header">
   <div class="container header-container">
-    <a href="./index.html" class="title"
-      ><svg class="logo" width="160" height="68">
+    <a href="./index.html" class="title" aria-label="Home page"
+      ><svg class="logo" width="160" height="68" aria-hidden="true">
         <use href="/img/logo.svg"></use></svg
     ></a>
     <nav class="header-nav">
       <ul class="header-nav-list">
         <li>
-          <a href="#about" class="nav-link">About us</a>
+          <a href="#about-us" class="nav-link">About us</a>
         </li>
         <li>
           <a href="#benefits" class="nav-link">Benefits</a>
@@ -24,9 +24,19 @@
       </ul>
     </nav>
     <div class="header-actions">
-      <button type="button" class="button header-btn">Order Now</button>
-      <button type="button" class="mobile-menu-open-btn">
-        <svg class="mobile-menu-open-icon" width="24" height="24">
+      <a href="#contacts" class="button header-btn">Order Now</a>
+      <button
+        type="button"
+        class="mobile-menu-open-btn"
+        aria-label="Open navigation menu"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          class="mobile-menu-open-icon"
+          width="24"
+          height="24"
+          aria-hidden="true"
+        >
           <use href="/img/icons.svg#menu"></use>
         </svg>
       </button>

@@ -88,6 +88,11 @@
   transition: color 0.25s linear;
 }
 
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+  text-decoration: underline;
+}
+
 .mobile-menu-link:active {
   color: #8668c7;
 }
