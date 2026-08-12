@@ -96,11 +96,11 @@
     margin: 0 auto 40px;
   }
 
-  .section-title {
+  .testimonials .section-title {
     max-width: 100%;
   }
 
-  .section-text {
+  .testimonials .section-text {
     max-width: 100%;
   }
 
@@ -134,7 +134,7 @@
     margin-bottom: 80px;
   }
 
-  .section-title {
+  .testimonials .section-title {
     font-size: 42px;
   }
 

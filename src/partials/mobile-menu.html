@@ -1,12 +1,26 @@
 <div class="mobile-menu" id="mobile-menu">
   <div class="container mobile-menu-container">
     <div class="mobile-menu-header">
-      <a href="./index.html"
-        ><svg class="mobile-logo" width="160" height="84">
+      <a href="./index.html" aria-label="Home page"
+        ><svg
+          class="mobile-logo"
+          width="160"
+          height="84"
+          aria-hidden="true"
+        >
           <use href="/img/logo.svg"></use></svg
       ></a>
-      <button type="button" class="mobile-menu-close-btn">
-        <svg class="mobile-menu-close-icon" width="24" height="24">
+      <button
+        type="button"
+        class="mobile-menu-close-btn"
+        aria-label="Close navigation menu"
+      >
+        <svg
+          class="mobile-menu-close-icon"
+          width="24"
+          height="24"
+          aria-hidden="true"
+        >
           <use href="/img/icons.svg#close"></use>
         </svg>
       </button>
@@ -14,7 +28,7 @@
     <nav class="mobile-menu-nav">
       <ul class="mobile-menu-list">
         <li>
-          <a href="#about" class="mobile-menu-link">About us</a>
+          <a href="#about-us" class="mobile-menu-link">About us</a>
         </li>
         <li>
           <a href="#benefits" class="mobile-menu-link">Benefits</a>
@@ -29,7 +43,7 @@
           <a href="#contacts" class="mobile-menu-link">Contacts</a>
         </li>
       </ul>
-      <button type="button" class="button mobile-order-btn">Order Now</button>
+      <a href="#contacts" class="button mobile-order-btn">Order Now</a>
     </nav>
   </div>
 </div>

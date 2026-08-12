@@ -69,7 +69,11 @@
 
 .footer-nav-list a:hover,
 .footer-nav-list a:focus {
-  color: #ccc16e;
+  text-decoration: underline;
+}
+
+.footer-nav-list a:active {
+  color: #8668c7;
 }
 
 .footer-credits {
@@ -85,7 +89,7 @@
   font-size: 14px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1439px) {
   .footer {
     padding: 64px 32px;
   }
