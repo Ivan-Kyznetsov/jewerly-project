@@ -1,6 +1,6 @@
 .footer {
   background-color: #ffffff;
-  padding: 80px 64px 64px;
+  padding: 80px 0 64px;
 }
 
 .footer-container {
@@ -128,7 +128,7 @@
 
 @media screen and (max-width: 767px) {
   .footer {
-    padding: 64px 16px;
+    padding: 64px 0;
   }
 
   .footer-container {
