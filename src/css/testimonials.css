@@ -19,15 +19,20 @@
 
 .testimonials-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .testimonials-item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   width: 100%;
   max-width: 335px;
+  margin: 0 auto;
 }
 
 .testimonials-img {
@@ -38,14 +43,13 @@
 
 /* Card content*/
 
-.testimonials-item.card {
+.testimonials-card {
   display: flex;
   flex-direction: column;
-
   padding: 32px;
-
   border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: #f2f2f2;
+  box-sizing: border-box;
 }
 
 /* Stars */
@@ -65,7 +69,7 @@
   stroke: #000;
 }
 
-/* Quote */
+/* Quote and Author*/
 
 .quote {
   margin: 0;
@@ -74,19 +78,13 @@
   line-height: 1.5;
 }
 
-/* Avatar */
-
-.author-container {
-  width: 100%;
-  margin-top: 24px;
-  height: 24px;
-}
-
 .author-name {
+  display: block;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
+  margin-top: 24px;
 }
 
 /* Tablet screen */
@@ -96,10 +94,7 @@
     margin: 0 auto 40px;
   }
 
-  .testimonials .section-title {
-    max-width: 100%;
-  }
-
+  .testimonials .section-title,
   .testimonials .section-text {
     max-width: 100%;
   }
@@ -109,22 +104,25 @@
   }
 
   .testimonials-item {
-    width: 203px;
+    flex-direction: row;
     max-width: none;
+    width: 100%;
+    gap: 24px;
   }
 
   .testimonials-img {
-    width: 100%;
+    flex: 0 0 203px;
+    width: 203px;
     height: 260px;
     object-fit: cover;
   }
 
-  .testimonials-item.card {
-    width: 250px;
+  .author-name {
+    margin-top: auto;
   }
 
-  .avatar {
-    margin-top: auto;
+  .testimonials-item:nth-child(2) .card-2 {
+    order: -1;
   }
 }
 
@@ -143,11 +141,16 @@
   }
 
   .testimonials-item {
-    width: 304px;
-    max-width: none;
+    gap: 32px;
   }
 
-  .testimonials-item.card {
-    width: 640px;
+  .testimonials-img {
+    flex: 0 0 304px;
+    width: 304px;
+  }
+
+  .testimonials-card {
+    flex: 1;
+    width: auto;
   }
 }
